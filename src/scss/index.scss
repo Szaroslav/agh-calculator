@@ -1,0 +1,21 @@
+@use 'variables' as v;
+
+body {
+    margin: 0;
+    background-color: v.$bg-dark-color;
+}
+
+.agh-calculator {
+    margin: 0 auto;
+    color: white;
+
+    &__form {
+        padding: 32px;
+        background-color: v.$bg-light-color;
+    }
+
+    &__subject {
+        display: flex;
+        flex-direction: column;
+    }
+}
