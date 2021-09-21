@@ -6,10 +6,12 @@ body {
 }
 
 .agh-calculator {
-    margin: 0 auto;
     color: white;
 
     &__form {
+        width: 90%;
+        max-width: 500px;
+        margin: 16px auto;
         padding: 32px;
         background-color: v.$bg-light-color;
     }
