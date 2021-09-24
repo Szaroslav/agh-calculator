@@ -13,12 +13,56 @@
                     <li class="agh-calculator__subject">
                         <label for="">Matematyka (poziom podstawowy)</label>
                         <input class="agh-calculator__slider" type="range" name="" id="" min="0" max="100" step="1" value="100" />
-                        <input type="number" name="" id="" value="100" />
+                        <input type="number" id="maths-el-result" value="100" />
+                    </li>
+                    <li class="agh-calculator__subject" data-id="0">
+                        <label for="">Matematyka (poziom rozszerzony) <button>X</button></label>
+                        <input class="agh-calculator__slider" type="range" name="" id="" min="0" max="100" step="1" value="100" />
+                        <input type="number" name="" id="physics" class="al-input" value="100" />
+                    </li>
+                    <li class="agh-calculator__subject" data-id="2">
+                        <label for="">Informatyka (poziom rozszerzony) <button>X</button></label>
+                        <input class="agh-calculator__slider" type="range" name="" id="" min="0" max="100" step="1" value="100" />
+                        <input type="number" name="" id="computer-science" class="al-input" value="100" />
+                    </li>
+                    <li class="agh-calculator__subject" data-id="11">
+                        <label for="">Język obcy (poziom rozszerzony) <button>X</button></label>
+                        <input class="agh-calculator__slider" type="range" name="" id="" min="0" max="100" step="1" value="100" />
+                        <input type="number" name="" id="foreign-language" class="al-input" value="100" />
                     </li>
                 </ul>
                 <button>Dodaj przedmiot</button>
-                <button>Oblicz swój wynik</button>
+                <input id="calculate-btn" type="button" value="Oblicz swój wynik" />
             </form>
+            <ul class="agh-calculator__extra-subjects">
+                <li class="extra-subjects__item hidden" data-id="0">Matematyka</li>
+                <li class="extra-subjects__item" data-id="1">Fizyka</li>
+                <li class="extra-subjects__item hidden" data-id="2">Informatyka</li>
+                <li class="extra-subjects__item" data-id="3">Biologia</li>
+                <li class="extra-subjects__item" data-id="4">Chemia</li>
+                <li class="extra-subjects__item" data-id="5">Geografia</li>
+                <li class="extra-subjects__item" data-id="6">Język polski</li>
+                <li class="extra-subjects__item" data-id="7">Wiedza o społeczeństwie</li>
+                <li class="extra-subjects__item" data-id="8">Historia</li>
+                <li class="extra-subjects__item" data-id="9">Historia sztuki</li>
+                <li class="extra-subjects__item" data-id="10">Filozofia</li>
+                <li class="extra-subjects__item hidden" data-id="11">Język obcy</li>
+            </ul>
+            <div class="agh-calculator__results">
+                <ul class="results__list">
+                    <li class="results__item" data-id="budownictwo">Budownictwo <span class="results__result"></span></li>
+                    <li class="results__item" data-id="inzynieria-gornicza">
+                        Inżynieria i Zarządzanie Procesami Przemysłowymi <span class="results__result"></span>
+                    </li>
+                    <li class="results__item" data-id="inzynieria-i-zarzadzanie-pp">
+                        Inżynieria Kształtowania Środowiska <span class="results__result"></span>
+                    </li>
+                    <li class="results__item" data-id="inzynieria-ks">Inżynieria Górnicza <span class="results__result"></span></li>
+                    <li class="results__item" data-id="rewitalizacja-tz">
+                        Rewitalizacja Terenów Zdegradowanych <span class="results__result"></span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </body>
 </html>
